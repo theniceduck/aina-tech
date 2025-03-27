@@ -30,6 +30,11 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 
+// Portfolio assets
+import portfolio1 from "./portfolio/portfolio1.png";
+import portfolio2 from "./portfolio/portfolio2.mp4";
+import portfolio3 from "./portfolio/portfolio3.gif";
+
 export {
   airbnb,
   bill,
@@ -62,4 +67,8 @@ export {
   people01,
   people02,
   people03,
+  // Portfolio exports
+  portfolio1,
+  portfolio2,
+  portfolio3,
 };

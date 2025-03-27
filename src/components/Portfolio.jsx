@@ -1,34 +1,32 @@
 import React, { useState } from 'react'
 import styles, { layout } from '../style'
-import { arrowUp } from '../assets'
+import { arrowUp, portfolio1, portfolio2, portfolio3 } from '../assets'
 
 const Portfolio = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  // Example portfolio items - replace with your actual portfolio items
   const portfolioItems = [
     {
       type: 'image',
-      src: '/aina.tech/assets/portfolio1.png',
-      alt: 'Portfolio Item 1',
+      src: portfolio1,
+      alt: 'Web Development Project',
       title: 'Web Development Project',
-      description: 'A modern e-commerce platform built with React and Node.js'
+      description: 'A modern e-commerce platform built with React and Node.js, featuring responsive design and seamless user experience.'
     },
     {
       type: 'video',
-      src: '/aina.tech/assets/portfolio2.mp4',
-      alt: 'Portfolio Item 2',
-      title: 'Mobile App Demo',
-      description: 'Cross-platform mobile application for fitness tracking'
+      src: portfolio2,
+      alt: 'Mobile App Demo',
+      title: 'Mobile App Development',
+      description: 'Interactive demo of our cross-platform mobile application, showcasing smooth animations and intuitive user interface.'
     },
     {
       type: 'gif',
-      src: '/aina.tech/assets/portfolio3.gif',
-      alt: 'Portfolio Item 3',
-      title: 'UI/UX Animation',
-      description: 'Interactive user interface animations for a banking app'
+      src: portfolio3,
+      alt: 'UI/UX Animation',
+      title: 'UI/UX Design Process',
+      description: 'A glimpse into our design process, demonstrating how we transform concepts into engaging user experiences.'
     },
-    // Add more portfolio items as needed
   ];
 
   const nextSlide = () => {
@@ -43,6 +41,37 @@ const Portfolio = () => {
     );
   };
 
+  const renderMedia = () => {
+    const item = portfolioItems[currentIndex];
+    
+    switch (item.type) {
+      case 'video':
+        return (
+          <video
+            key={item.src}
+            src={item.src}
+            className="w-full h-full object-cover"
+            controls
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        );
+      case 'gif':
+      case 'image':
+      default:
+        return (
+          <img
+            key={item.src}
+            src={item.src}
+            alt={item.alt}
+            className="w-full h-full object-cover"
+          />
+        );
+    }
+  };
+
   return (
     <section id='portfolio' className={`${layout.section} flex flex-col items-center`}>
       <div className="w-full flex flex-col items-center">
@@ -51,22 +80,7 @@ const Portfolio = () => {
         </div>
         <div className={`${layout.sectionImg} relative w-full`}>
           <div className="w-full h-[600px] bg-black-gradient rounded-[20px] overflow-hidden relative">
-            {portfolioItems[currentIndex].type === 'video' ? (
-              <video
-                src={portfolioItems[currentIndex].src}
-                className="w-full h-full object-cover"
-                controls
-                autoPlay
-                loop
-                muted
-              />
-            ) : (
-              <img
-                src={portfolioItems[currentIndex].src}
-                alt={portfolioItems[currentIndex].alt}
-                className="w-full h-full object-cover"
-              />
-            )}
+            {renderMedia()}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/90 to-transparent p-6">
               <h3 className="text-white font-poppins font-semibold text-[24px] mb-2">
                 {portfolioItems[currentIndex].title}
