@@ -9,21 +9,21 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       type: 'image',
-      src: '/assets/portfolio1.png',
+      src: '${import.meta.env.BASE_URL}assets/portfolio1.png',
       alt: 'Portfolio Item 1',
       title: 'Web Development Project',
       description: 'A modern e-commerce platform built with React and Node.js'
     },
     {
       type: 'video',
-      src: '/assets/portfolio2.mp4',
+      src: '${import.meta.env.BASE_URL}assets/portfolio2.mp4',
       alt: 'Portfolio Item 2',
       title: 'Mobile App Demo',
       description: 'Cross-platform mobile application for fitness tracking'
     },
     {
       type: 'gif',
-      src: '/assets/portfolio3.gif',
+      src: '${import.meta.env.BASE_URL}assets/portfolio3.gif',
       alt: 'Portfolio Item 3',
       title: 'UI/UX Animation',
       description: 'Interactive user interface animations for a banking app'
