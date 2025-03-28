@@ -3,15 +3,15 @@ import styles from '../style'
 
 const Contact_Us = () => {
   // Replace this with your actual Google Form URL
-  const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse";
+  const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1WqfIwPCCv7B3g35GBpiRP6IargrdLjydCw9tJieGoWM/formResponse";
   
   // Replace these with your actual Google Form field names
   const GOOGLE_FORM_FIELDS = {
-    name: "entry.123456789",
-    email: "entry.987654321",
-    phone: "entry.456789123",
-    subject: "entry.321654987",
-    message: "entry.789123456"
+    name: "entry.789423250",
+    email: "entry.1130519964",
+    phone: "entry.974048387",
+    subject: "entry.935035897",
+    message: "entry.2049761803"
   };
 
   const [formData, setFormData] = useState({
