@@ -3,7 +3,7 @@ import styles from '../style'
 
 const Contact_Us = () => {
   // Replace this with your actual Google Form URL
-  const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdGR6m2tKu3R9QBlhltVOmPxcaNcptDwjdKxuWlAKSZHG-Tyg/formResponse";
+  const GOOGLE_FORM_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSdGR6m2tKu3R9QBlhltVOmPxcaNcptDwjdKxuWlAKSZHG-Tyg/formResponse";
   
   // Replace these with your actual Google Form field names
   const GOOGLE_FORM_FIELDS = {
@@ -33,40 +33,42 @@ const Contact_Us = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    try {
-      // Create form data for Google Forms
-      const formDataObj = new FormData();
-      Object.keys(formData).forEach(key => {
-        formDataObj.append(GOOGLE_FORM_FIELDS[key], formData[key]);
-      });
+    // Create a hidden form and submit it
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = GOOGLE_FORM_ACTION;
+    form.target = '_blank'; // This will open response in new tab
 
-      // Submit to Google Forms
-      await fetch(GOOGLE_FORM_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        body: formDataObj
-      });
+    // Add form fields
+    Object.keys(formData).forEach(key => {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = GOOGLE_FORM_FIELDS[key];
+      input.value = formData[key];
+      form.appendChild(input);
+    });
 
-      // Clear form
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: ""
-      });
+    // Submit form
+    document.body.appendChild(form);
+    form.submit();
+    document.body.removeChild(form);
 
-      setSubmitStatus('success');
-    } catch (error) {
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
+    // Clear form and show success message
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: ""
+    });
+
+    setSubmitStatus('success');
+    setIsSubmitting(false);
   };
 
   return (
@@ -183,11 +185,6 @@ const Contact_Us = () => {
           {submitStatus === 'success' && (
             <p className='mt-4 font-poppins text-green-400'>
               Thank you for your message! We'll get back to you soon.
-            </p>
-          )}
-          {submitStatus === 'error' && (
-            <p className='mt-4 font-poppins text-red-400'>
-              Oops! Something went wrong. Please try again later.
             </p>
           )}
         </form>
