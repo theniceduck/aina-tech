@@ -100,7 +100,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className={`${layout.sectionInfo} md:pl-20`}>
+      <div className={`${layout.sectionInfo} md:pl-20 md:translate-x-10`}>
         <h2 className={styles.heading2}>Our Comprehensive <br className='sm:block hidden'/> Service Solutions</h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           From creative design to cutting-edge technology solutions, we offer a complete suite of services 

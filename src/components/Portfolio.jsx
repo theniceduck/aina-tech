@@ -75,10 +75,10 @@ const Portfolio = () => {
   return (
     <section id='portfolio' className={`${layout.section} flex flex-col items-center`}>
       <div className="w-full flex flex-col items-center">
-        <div className="flex justify-center items-center mb-16 w-full">
+        <div className="flex justify-center items-center mb-[20px] w-full">
           <h2 className={`${styles.heading2} text-center`}>Explore Our Portfolio</h2>
         </div>
-        <div className={`${layout.sectionImg} relative w-full`}>
+        <div className={`${layout.sectionImg} relative w-full transform -translate-x-5`}>
           <div className="w-full h-[600px] bg-black-gradient rounded-[20px] overflow-hidden relative">
             {renderMedia()}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/90 to-transparent p-6">

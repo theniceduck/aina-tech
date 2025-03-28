@@ -44,7 +44,7 @@ const Hero = () => {
               key={index}
               src={image}
               alt={`hero ${index + 1}`}
-              className={`w-[100%] h-[100%] object-contain absolute transition-opacity duration-1000 ${
+              className={`w-[100%] h-[100%] object-contain absolute left-[-60px] transition-opacity duration-1000 ${
                 index === currentImageIndex ? 'opacity-100' : 'opacity-0'
               }`}
             />
