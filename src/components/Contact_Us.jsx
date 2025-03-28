@@ -3,7 +3,7 @@ import styles from '../style'
 
 const Contact_Us = () => {
   // Replace this with your actual Google Form URL
-  const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1WqfIwPCCv7B3g35GBpiRP6IargrdLjydCw9tJieGoWM/formResponse";
+  const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdGR6m2tKu3R9QBlhltVOmPxcaNcptDwjdKxuWlAKSZHG-Tyg/formResponse";
   
   // Replace these with your actual Google Form field names
   const GOOGLE_FORM_FIELDS = {
