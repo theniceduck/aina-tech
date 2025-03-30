@@ -75,6 +75,22 @@ const Services = () => {
     {
       title: "Custom Web System",
       description: "Specialized web systems and platforms built to handle your unique business requirements."
+    },
+    {
+      title: "AI Training",
+      description: "Custom AI model training and implementation services to help businesses leverage machine learning for specific applications and challenges."
+    },
+    {
+      title: "PC Building & Repair",
+      description: "Expert computer assembly, maintenance, and repair services for personal and business systems tailored to your performance needs."
+    },
+    {
+      title: "WhatsApp AI Chatbot",
+      description: "Custom WhatsApp chatbot solutions powered by AI to automate customer interactions and streamline business communication processes."
+    },
+    {
+      title: "Telegram Bot",
+      description: "Specialized Telegram bots for business automation, marketing, customer support, and community management to enhance engagement."
     }
   ];
 
