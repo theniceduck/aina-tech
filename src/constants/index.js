@@ -92,18 +92,18 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Client Satisfaction Rate",
+    value: "98%",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "Projects Delivered",
+    value: "10+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Weekly Client Inquiries",
+    value: "10+",
   },
 ];
 
@@ -121,7 +121,7 @@ export const footerLinks = [
       },
       {
         name: "Terms & Services",
-        link: "https://aina.tech/terms-and-services/",
+        link: "https://aina-tech/terms-and-services/",
       },
     ],
   },
@@ -130,15 +130,15 @@ export const footerLinks = [
     links: [
       {
         name: "Suggestions",
-        link: "https://aina.tech/suggestions/",
+        link: "https://aina-tech/suggestions/",
       },
       {
         name: "Blog",
-        link: "https://aina.tech/blog/",
+        link: "https://aina-tech/blog/",
       },
       {
         name: "Newsletters",
-        link: "https://aina.tech/newsletters/",
+        link: "https://aina-tech/newsletters/",
       },
     ],
   },
@@ -147,7 +147,7 @@ export const footerLinks = [
     links: [
       {
         name: "Become a Partner",
-        link: "https://aina.tech/become-a-partner/",
+        link: "https://aina-tech/become-a-partner/",
       },
     ],
   },
@@ -157,21 +157,21 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: instagram,
-    link: "https://www.instagram.com/aina.tech",
+    link: "https://www.instagram.com/",
   },
   {
     id: "social-media-2",
     icon: facebook,
-    link: "https://www.facebook.com/aina.tech",
+    link: "https://www.facebook.com/",
   },
   {
     id: "social-media-3",
     icon: twitter,
-    link: "https://www.twitter.com/aina.tech",
+    link: "https://www.twitter.com/",
   },
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/aina.tech",
+    link: "https://www.linkedin.com/",
   },
 ];
