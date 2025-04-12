@@ -9,7 +9,8 @@ import {
   Navbar, 
   Partners,
   Stats, 
-  Testimonials 
+  Testimonials,
+  Chatbot
 } from './components'
 import styles from './style'
 
@@ -38,6 +39,7 @@ const App = () => {
           <Footer/>     
         </div>
       </div>
+      <Chatbot />
     </div>
   )
 }

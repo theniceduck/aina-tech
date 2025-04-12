@@ -9,6 +9,7 @@ import Navbar from './Navbar'
 import Partners from './Partners'
 import Stats from './Stats'
 import Testimonials from './Testimonials'
+import Chatbot from "./Chatbot"
 
 export {
     Services,
@@ -21,5 +22,6 @@ export {
     Navbar,
     Partners,
     Stats,
-    Testimonials
+    Testimonials,
+    Chatbot
 }
