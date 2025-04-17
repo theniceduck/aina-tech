@@ -5,92 +5,92 @@ import styles, { layout } from '../style'
 const Services = () => {
   const servicesList = [
     {
-      title: "Logo Design",
-      description: "Create distinctive and memorable brand identities with custom logo designs that capture your company's essence."
+      "title": "Logo Design",
+      "description": "Custom logos that reflect and strengthen your brand identity."
     },
     {
-      title: "Name Card Design",
-      description: "Professional business card designs that make lasting impressions and effectively communicate your brand."
+      "title": "Name Card Design",
+      "description": "Sleek business cards that leave a memorable brand impression."
     },
     {
-      title: "Poster Design",
-      description: "Eye-catching poster designs that grab attention and effectively convey your message to your target audience."
+      "title": "Poster Design",
+      "description": "Bold posters designed to attract attention and communicate clearly."
     },
     {
-      title: "Banner Design",
-      description: "Striking banner designs for events, websites, and marketing campaigns that maximize visual impact."
+      "title": "Banner Design",
+      "description": "Impactful banners for events, websites, and marketing campaigns."
     },
     {
-      title: "Jersey/Shirt Design",
-      description: "Custom apparel designs that combine style and comfort, perfect for teams, events, and brand merchandise."
+      "title": "Jersey/Shirt Design",
+      "description": "Stylish custom apparel for teams, events, and branding."
     },
     {
-      title: "Social Media Design",
-      description: "Engaging social media graphics and content that boost your online presence and drive engagement."
+      "title": "Social Media Design",
+      "description": "Graphics that boost online presence and engage your audience."
     },
     {
-      title: "Branding Event Kit",
-      description: "Comprehensive event branding solutions including signage, materials, and promotional items."
+      "title": "Branding Event Kit",
+      "description": "Complete event branding kits with signage and materials."
     },
     {
-      title: "Photography/Videography",
-      description: "Professional photo and video services capturing your moments and products in stunning detail."
+      "title": "Photography/Videography",
+      "description": "Capture stunning visuals for events, products, and promotions."
     },
     {
-      title: "3D Modeling & Animation",
-      description: "Bring your ideas to life with high-quality 3D models and captivating animations for various industries."
+      "title": "3D Modeling & Animation",
+      "description": "Realistic 3D models and animations for various applications."
     },
     {
-      title: "3D Printing",
-      description: "Transform digital designs into physical objects with our advanced 3D printing services."
+      "title": "3D Printing",
+      "description": "Turn digital designs into physical products with 3D printing."
     },
     {
-      title: "Web Development",
-      description: "Custom websites and web applications built with cutting-edge technologies and best practices."
+      "title": "Web Development",
+      "description": "Custom websites built using modern, reliable web technologies."
     },
     {
-      title: "Mobile App Development",
-      description: "Native and cross-platform mobile applications that deliver exceptional user experiences."
+      "title": "Mobile App Development",
+      "description": "High-quality mobile apps for iOS, Android, and cross-platform."
     },
     {
-      title: "API Development & Integration",
-      description: "Seamless API solutions that connect your systems and enable efficient data exchange."
+      "title": "API Development & Integration",
+      "description": "Efficient API solutions for seamless system communication."
     },
     {
-      title: "Database Application & Management",
-      description: "Robust database solutions and management systems for efficient data handling and storage."
+      "title": "Database Application & Management",
+      "description": "Reliable database systems for storing and managing data."
     },
     {
-      title: "Custom Software Development",
-      description: "Tailored software solutions designed to meet your specific business needs and challenges."
+      "title": "Custom Software Development",
+      "description": "Software built to solve your specific business problems."
     },
     {
-      title: "AI & Automation Solutions",
-      description: "Intelligent automation systems and AI-powered solutions to streamline your operations."
+      "title": "AI & Automation Solutions",
+      "description": "Smart automation and AI tools to improve efficiency."
     },
     {
-      title: "UI/UX Design",
-      description: "User-centered design solutions that create intuitive and engaging digital experiences."
+      "title": "UI/UX Design",
+      "description": "Designs focused on intuitive and enjoyable user experiences."
     },
     {
-      title: "Custom Web System",
-      description: "Specialized web systems and platforms built to handle your unique business requirements."
+      "title": "Custom Web System",
+      "description": "Tailored web platforms for unique business functionality."
     },
     {
-      title: "AI Training",
-      description: "Custom AI model training and implementation services to help businesses leverage machine learning for specific applications and challenges."
+      "title": "AI Training",
+      "description": "Train AI models for your business’s unique needs."
     },
     {
-      title: "PC Building & Repair",
-      description: "Expert computer assembly, maintenance, and repair services for personal and business systems tailored to your performance needs."
+      "title": "PC Building & Repair",
+      "description": "Build and repair PCs for optimal performance and reliability."
     },
     {
-      title: "WhatsApp AI Chatbot",
-      description: "Custom WhatsApp chatbot solutions powered by AI to automate customer interactions and streamline business communication processes."
+      "title": "WhatsApp AI Chatbot",
+      "description": "Automate chats with smart, responsive WhatsApp AI bots."
     },
     {
-      title: "Telegram Bot",
-      description: "Specialized Telegram bots for business automation, marketing, customer support, and community management to enhance engagement."
+      "title": "Telegram Bot",
+      "description": "Powerful Telegram bots for support, marketing, and automation."
     }
   ];
 
